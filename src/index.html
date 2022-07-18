@@ -1,0 +1,101 @@
+ <div class="main">
+  <div id="img-div">
+    <img src="https://cdn1.dotesports.com/wp-content/uploads/2020/03/16102141/valorant_jett_duotoned-1-1-1-1.jpg" alt="valorant" id="image">
+    <div id="bg">
+      <div id="grid">
+        <div id="survey">
+          <h1 id="title">
+            Valorant Survey Form
+          </h1>
+          <p id="description" class="description text-center">
+            Thank you for helping the Valorant community!
+          </p>
+          <form id="survey-form">
+            <label id="name-label" for="name">Name</label><br>
+            <input class="size" type="text" id="name" placeholder="Enter your name" name="name" required><br>
+            <label id ="email-label" for="email">Email</label><br>
+            <input class="size" type="email" id="email" name="email" placeholder="Enter your Email" required><br>
+            <label id="number-label" for="number">Age</label><br>
+            <input class="size" type="number" id="number" placeholder="Age" name="number" min="15" max="99"><br>
+            <div id="roleRadio">
+            <label for="roles">Which role do you typically play?</label><br>
+            <input type="radio" id="controller" name="roles" value="controller">
+            <label for="controller">Controller</label><br>
+            <input type="radio" id="duelist" name="roles" value="duelist">
+            <label for="duelist">Duelist</label><br>
+            <input type="radio" id="initiator" name="roles" value="initiator">
+            <label for="initiator">Initiator</label><br>
+              <input type="radio" id="sentinel" name="roles" value="sentinel">
+            <label for="sentinel">Sentinel</label><br>
+            </div>
+            <br>
+            <div id="selector">
+                 <label for="maps">What is your favorite map?</label><br>
+<select required id="dropdown" name="maps">
+  <option value="" disabled selected>Select an option
+  <option value="icebox">Icebox</option>
+  <option value="bind">Bind</option>
+  <option value="haven">Haven</option>
+  <option value="split">Split</option>
+          <option value="ascent">Ascent</option></select>
+            </div>
+        <div id="gunChoice">
+          <label for="gun">Which gun do you prefer?</label><br>
+          <input type="radio" id="vandal" name="gun" value="vandal">
+            <label for="vandal">Vandal</label><br>
+            <input type="radio" id="phantom" name="gun" value="phantom">
+            <label for="phantom">Phantom</label><br>
+        </div>
+        <div id="character">
+          <br>
+          <label for="characters">Which characters do you play the most?<span class="smallText"> (choose at least 3)</span></label><br>
+          <input type="checkbox" id="characters" name="characters" value="breach">
+<label for="breach">Breach</label><br>
+<input type="checkbox" id="brimstone" name="brimstone" value="brimstone">
+<label for="brimstone">Brimstone</label><br>
+<input type="checkbox" id="cypher" name="cypher" value="cypher">
+<label for="cypher">Cypher</label><br>
+          <input type="checkbox" id="jett" name="jett" value="jett">
+<label for="jett">Jett</label><br>
+          <input type="checkbox" id="killjoy" name="killjoy" value="killjoy">
+<label for="killjou">Killjoy</label><br>
+          <input type="checkbox" id="omen" name="omen" value="omen">
+<label for="omen">Omen</label><br>
+          <input type="checkbox" id="phoenix" name="phoenix" value="phoenix">
+<label for="phoenix">Phoenix</label><br>
+          <input type="checkbox" id="raze" name="raze" value="raze">
+<label for="raze">Raze</label><br>
+          <input type="checkbox" id="reyna" name="reyna" value="reyna"> <label for="reyna">Reyna</label><br>
+          <input type="checkbox" id="sage" name="sage" value="sage">
+<label for="sage">Sage</label><br>
+          <input type="checkbox" id="skye" name="skye" value="skye">
+<label for="skye">Skye</label><br>
+          <input type="checkbox" id="sova" name="sova" value="sova">
+<label for="sova">Sova</label><br>
+          <input type="checkbox" id="viper" name="viper" value="viper">
+<label for="viper">Viper</label><br>
+          <input type="checkbox" id="yoru" name="yoru" value="yoru">
+<label for="yoru">Yoru</label><br>
+        </div>
+            <div class="form-group">
+              <br>
+              <p>Any comments or suggestions to improve Valorant?</p>
+              <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea><br>
+            </div>
+          <div id="container">
+           <div class="box">
+            <div class="form-group">
+              <button class="submit-button" type="submit" id="submit">
+          <div class="label">
+            <span class="hover-effect"></span>
+            <span class="label-text">Submit</span>
+            </div>
+              </button>
+           </div>
+           </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

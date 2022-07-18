@@ -1,0 +1,243 @@
+body {
+  margin: 0;
+  font-family: system-ui;
+  color: black;
+  font-size: 22px;
+}
+#image {
+  min-height: 100%;
+  min-width: 1023px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#bg {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(90, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-firection: column;
+}
+
+#survey-form {
+  background: rgba(25, 0, 0, 0.9);
+  padding: 2.5rem;
+  border-radius: 15px;
+}
+
+.size {
+  width: 600px;
+  margin-bottom: 25px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+}
+input {
+  font-size: 20px;
+}
+h1, h6 {
+  text-align: center;
+  margin: 12px;
+}
+
+.text-center {
+  text-align: center;
+}
+.description {
+  font-size: 15px;
+  margin: 12px;
+}
+
+p {
+  margin: 2px;
+}
+#dropdown {
+  width: 600px;
+  margin-bottom: 25px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  font-size: 20px;
+}
+select:invalid {
+  color: gray;
+}
+#survey {
+  position: relative;
+}
+.smallText {
+  font-size: 15px;
+}
+#comments {
+  width: 600px;;
+  margin-bottom: 25px;
+  padding-bottom: 80px;
+}
+.input-textarea {
+  font-size: 20px;
+  font-family: system-ui;
+}
+
+/* from here down is from --> https://dev.to/lampewebdev/what-we-can-learn-from-one-button-on-the-valorant-page-10g <-- */
+@font-face {
+  font-family: "DIN Next LT Pro Bold";
+  src: url("//db.onlinewebfonts.com/t/3a88649e176a40a6d80b395ca0ae430d.eot");
+  src: url("//db.onlinewebfonts.com/t/3a88649e176a40a6d80b395ca0ae430d.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/3a88649e176a40a6d80b395ca0ae430d.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/3a88649e176a40a6d80b395ca0ae430d.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/3a88649e176a40a6d80b395ca0ae430d.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/3a88649e176a40a6d80b395ca0ae430d.svg#DIN Next LT Pro Bold")
+      format("svg");
+}
+
+:root {
+  --v-red: #ff4655;
+  --v-white: #ece8e1;
+  --v-black: #0f1923;
+  --v-outline: rgba(236, 232, 225, 0.5);
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 600px;
+}
+
+.box {
+  width: 100%;
+}
+button {
+  width: 100%;
+  margin-bottom: 3rem;
+  position: relative;
+  display: block;
+  font-size: 1.9rem;
+  padding: 0.7rem;
+  border: 0;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--v-white);
+}
+button::before,
+button::after {
+  background-color: transparent;
+  content: "";
+  display: block;
+  position: absolute;
+  height: calc(50% - 0.4rem);
+  width: 100%;
+  border: 1px solid var(--v-outline);
+  left: 0;
+}
+
+button::before {
+  border-bottom: 0;
+  top: 0;
+}
+
+button::after {
+  border-top: 0;
+  bottom: 0;
+}
+
+button:hover {
+  color: var(--v-white);
+}
+.label {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+.label:before {
+  content: "";
+  height: 100%;
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+.hover-effect {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 120%;
+  top: 0;
+  left: -5%;
+  z-index: 1;
+  background-color: var(--v-red);
+  transform: translateX(-100%) skew(-10deg);
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+
+button:hover .hover-effect {
+  transform: translateX(0) skew(-10deg);
+}
+.label-text {
+  position: relative;
+  display: block;
+  padding: 1.9rem 3rem;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.label-text::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0.6rem;
+  width: 0.6rem;
+  right: 0;
+  bottom: 0;
+  transition: background-color 0.2s ease-in;
+}
+.primary {
+  color: var(--v-black);
+}
+
+.primary .label::before {
+  background-color: var(--v-white);
+}
+.submit-button {
+  color: var(--v-white);
+}
+
+.submit-button .label::before,
+.submit-button .label::after {
+  border: 1px solid var(--v-outline);
+}
+
+/* OUTLINE RED BUTTON */
+.submit-button + .red {
+  color: var(--v-red);
+}
+
+.submit-button + .red:hover {
+  color: var(--v-white);
+}
+
+.submit-button + .red .label::before,
+.submit-button + .red .label::after {
+  border-color: var(--v-red);
+}
